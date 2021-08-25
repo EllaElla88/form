@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表單設定</title>
+	
+<style type="text/css">
+	input[type=text]{
+		
+		width: 100px;
+		padding: 6px 20px;
+		border: 1px solid #FFB121;
+		border-radius: 10px;
+	}
+	input[type=password]{
+		
+		width: 150px;
+		padding: 6px 20px;
+		border: 1px solid #FFB121;
+		border-radius: 10px;
+	}
+	textarea{
+		width: 500px;
+		height: 250px;
+		border: 1px solid #FFB121;
+		border-radius: 10px;
+		padding: 6px 20px;
+	}
+	
+	input[type=reset]{
+		width: 100px;
+		height: 50px;
+		padding: 6px 20px;
+		border-radius: 10px;
+		border: 1px solid #FFB121;
+		background-color: #FFB121;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		color: #FFEEBC;
+	}
+	input[type=submit]{
+		width: 100px;
+		height: 50px;
+		padding: 6px 20px;
+		border-radius: 10px;
+		border: 1px solid #FFB121;
+		background-color: #FFB121;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		color: #FFEEBC;
+	}
+	
+	input[type=reset]:hover{
+		background-color: #FF7320;
+	}
+	input[type=submit]:hover{
+		background-color:#FF7320; 
+	}
+	
+	</style>
+	
+	
+	
+	
+</head>
+
+<body> 
+<form id="form1" name="forme1" method="post" action="../php/ggg.php">
+<table width="667" border="0" align="center">
+  <tbody>
+    <tr>
+      <td height="65" colspan="2" align="center">加入會員</td>
+    </tr>
+    <tr>
+      <td width="139">您的帳號:</td>
+      <td width="396"><input type="text" name="Name" id="Name" size="20"></td>
+    </tr>
+    <tr>
+      <td>您的密碼:</td>
+      <td><input type="password" name="password" id="password"></td>
+    </tr>
+    <tr>
+      <td>確認密碼:</td>
+      <td><input type="password" name="password2" id="password2"></td>
+    </tr>
+    <tr>
+      <td>您的Email:</td>
+      <td><input type="email" name="email" id="email" size="50"></td>
+    </tr>
+    <tr>
+      <td>您的性別:</td>
+      <td><input name="gender" type="radio" id="radio" value="男性">
+		  <label form="gender">男性
+		<input name="gender" type="radio" id="radio2" value="女性">
+		女性</label></td>
+    </tr>
+    <tr>
+      <td>喜歡的水果:</td>
+      <td><input name="checkbox" type="checkbox" id="checkbox" value="香蕉">
+      <label for="checkbox">香蕉
+        <input name="checkbox2" type="checkbox" id="checkbox2" value="蘋果">
+      蘋果
+      <input name="checkbox3" type="checkbox" id="checkbox3" value="葡萄">
+      葡萄 
+      <input name="checkbox4" type="checkbox" id="checkbox4" value="蓮霧">
+      蓮霧 
+      <input name="checkbox5" type="checkbox" id="checkbox5" value="芭樂">
+      芭樂 </label></td>
+    </tr>
+    <tr>
+      <td>您的星座:</td>
+      <td><select name="Astronomy" size="3" id="Astronomy">
+        <option>獅子座</option>
+        <option>金牛座</option>
+        <option>巨蠍座</option>
+		<option>處女座</option>
+		<option>天秤座</option>
+		<option>雙子座</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>您的意見:</td>
+      <td><textarea name="opinion" cols="45" rows="5" id="opinion"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input name="reset" type="reset" id="reset" value="重設">
+        <input type="submit" name="submit" id="submit" value="送出"></td>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</form>
+<p>
+  <label for="date">Date:</label>
+  <input type="date" name="date" id="date">
+  <label for="time">Time:</label>
+  <input type="time" name="time" id="time">
+  <label for="week">Week:</label>
+  <input type="week" name="week" id="week">
+</p>
+
+	
+	
+	
+	
+</body>
+</html>
